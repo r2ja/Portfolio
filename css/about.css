@@ -1,0 +1,133 @@
+body {
+    
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .navbar {
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+  
+    color: #d45352;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navbar-brand img {
+    height: 50px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+  }
+  
+  .nav-item {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: #d45352;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  .button {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: transparent;
+    color: #d45352;
+    border: transparent;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #7f3131;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d45352;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-color: #d45352;
+    border: 2px solid #d45352;
+    color: white;
+  }
+  
+  .container {
+    background-image: url("/Assets/bgabtpage.png");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .profile-picture {
+    border-radius: 50%;
+    border: 10px solid #d45352;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-family: 'Unbounded', cursive;
+    color: #ffffff;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .description {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    font-size: larger;
+    color: #d45352;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  
+  .buttn {
+    margin-top: 30px;
+    background-color: #d45352;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+
+  .buttn:hover {
+    background-color:white;
+  }
+
+  .social-media-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+  
+  .social-media-icons a {
+    color: white;
+  }

@@ -1,0 +1,153 @@
+.navbar {
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    font-family: Roboto;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navbar-brand img {
+    height: 50px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+  }
+  
+  .nav-item {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: #d45352;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: black;
+  }
+
+  body {
+    background-color: black;
+    background-image: url("/Assets/bgpeach.png");
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #7f3131;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d45352;
+    border-radius: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: transparent;
+    color: #d45352;
+    border: transparent;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #d45352;
+    border: 2px solid #d45352;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .center {
+    font-size: 150px;
+    margin-top: 300px;
+    font-family: Unbounded;
+    text-align: center;
+    color: #d45352;
+    margin-bottom: -400px;
+  }
+  
+  .left-container {
+    background-color: #d45352;
+    width: 40%;
+    padding: 50px;
+    color: white;
+  }
+  
+  .right-container {
+    text-align: left;
+    font-family: roboto;
+    background-color: #7f3131;
+    width: 20%;
+    height: 23.8%;
+    padding: 50px;
+    color: white;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 60px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="text"], input[type="tel"], input[type="email"], textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  input[type="submit"] {
+    width: 82%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #7f3131;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #7f3131;
+    color: white;
+  }
+  
+  .social-media-icons {
+    margin-top: 55px;
+  }
+  
+  .social-media-icons a {
+    color: white;
+    font-size: 15px;
+    margin: 0 10px;
+  }
