@@ -13,16 +13,29 @@ const HomeContainer = styled.div`
   background-size: cover;
   background-position: center;
   position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: opacity(0.2);
+  }
 `;
 
 const ContentWrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: relative;
+  z-index: 1;
 `;
 
 const TextContent = styled.div`
@@ -31,8 +44,8 @@ const TextContent = styled.div`
 
 const Greeting = styled.p`
   font-size: 18px;
-  color: #888;
-  margin-bottom: 5px;
+  color: #666;
+  margin-bottom: 10px;
 `;
 
 const Name = styled.h1`
@@ -47,8 +60,9 @@ const titleChange = keyframes`
 `;
 
 const JobTitle = styled.h2`
-  font-size: 48px;
-  height: 30px;
+  font-size: 64px;
+  font-weight: bold;
+  height: 80px;
   margin-bottom: 20px;
 `;
 
@@ -58,9 +72,8 @@ const AnimatedTitle = styled.span`
 `;
 
 const CurrentWork = styled.p`
-  font-size: 16px;
+  font-size: 18px;
   color: #666;
-  margin-top: 50px;
   margin-bottom: 30px;
 `;
 
@@ -70,12 +83,13 @@ const ButtonContainer = styled.div`
 `;
 
 const Button = styled.a`
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: 2px solid #000;
   background-color: ${props => props.primary ? '#000' : 'transparent'};
   color: ${props => props.primary ? '#fff' : '#000'};
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
   transition: all 0.3s ease;
 
   &:hover {
@@ -90,13 +104,13 @@ const ImageContainer = styled.div`
 `;
 
 const ProfileImage = styled.img`
-  max-width: 50%;
+  max-width: 60%;
   height: auto;
 `;
 
 const Home = () => {
   const [titleIndex, setTitleIndex] = useState(0);
-  const titles = ['Student', 'AI Enthusiast', 'Esports Enthusiast'];
+  const titles = ['Student', 'AI Developer', 'Esports'];
 
   useEffect(() => {
     const interval = setInterval(() => {

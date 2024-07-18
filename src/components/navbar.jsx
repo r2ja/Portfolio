@@ -7,8 +7,13 @@ const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #ffffff;
+  padding: 1.5rem 60px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 `;
 
 const Logo = styled.img`
@@ -17,17 +22,17 @@ const Logo = styled.img`
 
 const NavLinks = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 `;
 
 const NavLink = styled(Link)`
   font-size: 1rem;
   font-weight: 500;
-  color: #666666;
+  color: #000000;
   transition: color 0.3s ease;
 
   &:hover, &.active {
-    color: #000000;
+    color: #666666;
   }
 
   &.active {
@@ -36,8 +41,8 @@ const NavLink = styled(Link)`
 `;
 
 const NavNumber = styled.span`
-  font-size: 0.75rem;
-  color: #999999;
+  font-size: 0.8rem;
+  color: #666666;
   margin-right: 0.5rem;
 `;
 
