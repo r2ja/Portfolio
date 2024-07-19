@@ -4,9 +4,11 @@ import { Link } from 'react-scroll';
 import backgroundImage from '../assets/bg.jpg';
 import profileImage from '../assets/me.png';
 import resumePDF from '../assets/resume.pdf';
+import About from './about';
+import Card from './card';
+import Portfolio from './portfolio';
 
 const HomeContainer = styled.div`
-  height: 100vh;
   display: flex;
   align-items: center;
   background-image: url(${backgroundImage});
@@ -27,9 +29,8 @@ const HomeContainer = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 60px;
+  max-width: 100%;
+  padding: 0 15rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,7 +101,7 @@ const Button = styled.a`
 const ImageContainer = styled.div`
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 `;
 
 const ProfileImage = styled.img`
@@ -120,6 +121,7 @@ const Home = () => {
   }, []);
 
   return (
+    <>
     <HomeContainer>
       <ContentWrapper>
         <TextContent>
@@ -138,6 +140,12 @@ const Home = () => {
         </ImageContainer>
       </ContentWrapper>
     </HomeContainer>
+
+    <About />
+
+    <Portfolio />
+    
+    </>
   );
 };
 
